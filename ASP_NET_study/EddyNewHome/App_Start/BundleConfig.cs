@@ -44,6 +44,32 @@ namespace EddyNewHome
             //            "~/",
             //            "~/"));
             //#endregion
+
+
+
+            bundles.Add(new StyleBundle("~/Dashio/css").Include(
+                "~/Dashio/lib/bootstrap/css/bootstrap.min.css",
+                "~/Dashio/lib/font-awesome/css/font-awesome.css",
+                "~/Dashio/css/zabuto_calendar.css",
+                "~/Dashio/lib/gritter/css/jquery.gritter.css",
+                "~/Dashio/css/style.css",
+                "~/Dashio/css/style-responsive.css"
+                ));
+
+            bundles.Add(new ScriptBundle("~/Dashio/header_js").Include("~/Dashio/lib/chart-master/Chart.js"));
+            bundles.Add(new ScriptBundle("~/Dashio/footer_js").Include(
+                "~/Dashio/lib/jquery/jquery.min.js",
+                "~/Dashio/lib/bootstrap/js/bootstrap.min.js",
+                "~/Dashio/lib/jquery.dcjqaccordion.2.7.js",
+                "~/Dashio/lib/jquery.scrollTo.min.js",
+                "~/Dashio/lib/jquery.nicescroll.js",
+                "~/Dashio/lib/jquery.sparkline.js",
+                "~/Dashio/lib/common-scripts.js",
+                "~/Dashio/lib/gritter/js/jquery.gritter.js",
+                "~/Dashio/lib/gritter-conf.js",
+                "~/Dashio/lib/sparkline-chart.js",
+                "~/Dashio/lib/zabuto_calendar.js"
+                ));
         }
     }
 }
